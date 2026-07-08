@@ -1,0 +1,101 @@
+cabal-version: 2.2
+
+-- This file has been generated from package.yaml by hpack version 0.39.1.
+--
+-- see: https://github.com/sol/hpack
+
+name:           haskell-algorithms
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/cybervoid0/haskell-algorithms#readme>
+homepage:       https://github.com/cybervoid0/haskell-algorithms#readme
+bug-reports:    https://github.com/cybervoid0/haskell-algorithms/issues
+author:         Alex Shenshin
+maintainer:     shenshin@me.com
+copyright:      2026 Alex Shenshin
+license:        BSD-3-Clause
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    CHANGELOG.md
+
+source-repository head
+  type: git
+  location: https://github.com/cybervoid0/haskell-algorithms
+
+library
+  exposed-modules:
+      Codewars.Kyu5.BestTravel
+      Codewars.Kyu5.DirectionsReduction
+      Codewars.Kyu5.FirstNonRepeatingCharacter
+      Codewars.Kyu5.HumanReadableTime
+      Codewars.Kyu5.PerfectPower
+      Codewars.Kyu5.ProductOfConsecutiveFibNumbers
+      Codewars.Kyu6.AreAllElementsEqual
+      Codewars.Kyu6.AreTheyTheSame
+      Codewars.Kyu6.GuessTheNumberMonad
+      Codewars.Kyu6.HighestScoringWord
+      Codewars.Kyu6.RomanNumeralsDecoder
+      Codewars.Kyu6.SplitStrings
+      Codewars.Kyu6.TakeANumberAndSumItsDigitsaisedTo
+      Codewars.Kyu7.DisemvowelTrolls
+      Codewars.Kyu7.StringEndsWith
+      Codewars.Kyu8.RemoveFirstAndLastCharacter
+      Lib
+      LongestCommonSubsequence
+      Neetcode.ArraysAndHashing.EncodeAndDecodeStrings
+      Neetcode.ArraysAndHashing.HasSum
+      Neetcode.ArraysAndHashing.LongestConsecutiveSequence
+      Neetcode.ArraysAndHashing.ProductOfArrayExceptSelf
+      Neetcode.ArraysAndHashing.TwoSum
+      Neetcode.Stack.ValidParenthesis
+      Neetcode.TwoPointers.IsPalindrome
+      Neetcode.TwoPointers.MaxWaterContainer
+  other-modules:
+      Paths_haskell_algorithms
+  autogen-modules:
+      Paths_haskell_algorithms
+  hs-source-dirs:
+      src
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , containers
+    , split
+  default-language: Haskell2010
+
+executable haskell-algorithms-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_haskell_algorithms
+  autogen-modules:
+      Paths_haskell_algorithms
+  hs-source-dirs:
+      app
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , containers
+    , haskell-algorithms
+    , split
+  default-language: Haskell2010
+
+test-suite haskell-algorithms-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_haskell_algorithms
+  autogen-modules:
+      Paths_haskell_algorithms
+  hs-source-dirs:
+      test
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , containers
+    , haskell-algorithms
+    , split
+  default-language: Haskell2010
