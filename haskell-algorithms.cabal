@@ -35,6 +35,7 @@ library
       Codewars.Kyu6.AreTheyTheSame
       Codewars.Kyu6.GuessTheNumberMonad
       Codewars.Kyu6.HighestScoringWord
+      Codewars.Kyu6.ReusableMemoization
       Codewars.Kyu6.RomanNumeralsDecoder
       Codewars.Kyu6.SplitStrings
       Codewars.Kyu6.TakeANumberAndSumItsDigitsaisedTo
