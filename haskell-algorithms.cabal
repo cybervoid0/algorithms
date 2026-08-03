@@ -25,6 +25,8 @@ source-repository head
 
 library
   exposed-modules:
+      Codewars.Kyu3.RecursionSchemesPreloaded
+      Codewars.Kyu3.TheCataKata
       Codewars.Kyu5.BestTravel
       Codewars.Kyu5.DirectionsReduction
       Codewars.Kyu5.FirstNonRepeatingCharacter
@@ -33,15 +35,20 @@ library
       Codewars.Kyu5.ProductOfConsecutiveFibNumbers
       Codewars.Kyu6.AreAllElementsEqual
       Codewars.Kyu6.AreTheyTheSame
+      Codewars.Kyu6.DeciferThis
       Codewars.Kyu6.GuessTheNumberMonad
       Codewars.Kyu6.HighestScoringWord
+      Codewars.Kyu6.PascalTriangle
       Codewars.Kyu6.ReusableMemoization
       Codewars.Kyu6.RomanNumeralsDecoder
+      Codewars.Kyu6.SieveOfEratosphenes
       Codewars.Kyu6.SplitStrings
       Codewars.Kyu6.TakeANumberAndSumItsDigitsaisedTo
       Codewars.Kyu7.DisemvowelTrolls
+      Codewars.Kyu7.StalinSort
       Codewars.Kyu7.StringEndsWith
       Codewars.Kyu8.RemoveFirstAndLastCharacter
+      Euclidean
       Lib
       LongestCommonSubsequence
       Neetcode.ArraysAndHashing.EncodeAndDecodeStrings
@@ -49,6 +56,7 @@ library
       Neetcode.ArraysAndHashing.LongestConsecutiveSequence
       Neetcode.ArraysAndHashing.ProductOfArrayExceptSelf
       Neetcode.ArraysAndHashing.TwoSum
+      Neetcode.SlidingWindow.BestTimeToBuyAndSellStock
       Neetcode.Stack.ValidParenthesis
       Neetcode.TwoPointers.IsPalindrome
       Neetcode.TwoPointers.MaxWaterContainer
@@ -63,7 +71,9 @@ library
       array
     , base >=4.7 && <5
     , containers
+    , mtl
     , split
+    , transformers
   default-language: Haskell2010
 
 executable haskell-algorithms-exe
@@ -80,7 +90,9 @@ executable haskell-algorithms-exe
     , base >=4.7 && <5
     , containers
     , haskell-algorithms
+    , mtl
     , split
+    , transformers
   default-language: Haskell2010
 
 test-suite haskell-algorithms-test
@@ -98,5 +110,7 @@ test-suite haskell-algorithms-test
     , base >=4.7 && <5
     , containers
     , haskell-algorithms
+    , mtl
     , split
+    , transformers
   default-language: Haskell2010
